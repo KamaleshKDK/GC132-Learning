@@ -1,0 +1,31 @@
+<h1 class="heading-h1">This is App Component</h1>
+<hr>
+<counter></counter>
+<str-interpolation></str-interpolation>
+<str-reset></str-reset>
+<show-list></show-list>
+<default-pipes></default-pipes>
+<custom-pipes></custom-pipes>
+<hr>
+<h2>Parent to Child</h2>
+<label>Parent Input</label>
+<input type="text" [(ngModel)]="sendParentName">
+<child1 [sendParentName]="sendParentName"></child1>
+
+<hr>
+<h1>Data Come from Child</h1>
+<child2 (somethingChanged)="consoleData($event)"></child2>
+
+<favorite [isFav]="post.isFav" (change)="onFavChange($event)"
+
+ [likesCount]='tweet.likesCount'
+    [isActive]="tweet.isLiked">
+</favorite>
+
+<bootstrap-content-projection>
+    <ng-container class="heading">Heading</ng-container>
+    <div class="body">
+        <h2>Body</h2>
+        <p>Some Content..</p>
+    </div>
+</bootstrap-content-projection>

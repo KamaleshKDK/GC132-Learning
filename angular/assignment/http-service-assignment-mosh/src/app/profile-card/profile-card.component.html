@@ -1,0 +1,9 @@
+<div class="flex-container m-4">
+    <div class="card mt-5" *ngFor="let follower of followers" style="width: 300px;">
+        <img  src={{follower.avatar_url}} class="card-img-top" alt="Sample Image">
+        <div class="card-body text-center">
+            <h5 class="card-title">{{follower.login}}</h5>
+            <a href="follower.html_url" class="btn btn-primary">{{follower.html_url}}</a>
+        </div>
+    </div>
+</div>

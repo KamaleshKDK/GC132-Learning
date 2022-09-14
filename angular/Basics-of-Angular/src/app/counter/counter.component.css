@@ -1,0 +1,22 @@
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus-button {
+    margin-left: 20px;
+    font-size: 30px;
+    width: 10%;
+}
+
+.minus-button {
+    margin-right: 20px;
+    font-size: 30px;
+    width: 10%;
+}
+
+.span-counter {
+    font-size: 30px;
+    font-weight: 600;
+}

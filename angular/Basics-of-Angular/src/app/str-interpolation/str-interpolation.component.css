@@ -1,0 +1,21 @@
+.str-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.str-btn {
+    font-size: 26px;
+    width: 10%;
+}
+
+.str-input {
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.str-input-cntl {
+    width: 250px;
+    margin: 0 auto;
+}

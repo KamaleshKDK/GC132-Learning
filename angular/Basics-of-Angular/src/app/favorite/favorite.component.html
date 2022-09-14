@@ -1,0 +1,12 @@
+<hr>
+
+<h1>Favorite </h1>
+
+<span class="glyphicon star-icon" [ngClass]="{
+    'glyphicon-star': isFav,
+    'glyphicon-star-empty': !isFav
+}" (click)="onClick1()"></span>
+
+<span class="glyphicon glyphicon-heart  heart-icon" [class.isHighlight]="isActive" (click)="onClick2()">
+</span>
+<span>{{likesCount}}</span>

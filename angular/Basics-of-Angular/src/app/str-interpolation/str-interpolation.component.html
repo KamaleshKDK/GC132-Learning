@@ -1,0 +1,13 @@
+<div class="str-button">
+    <button class="btn btn-primary str-btn" (click)="onClick()">Click Me !</button>
+    <br>
+</div>
+<br>
+<div class="str-input-cntl">
+    <input type="text" class="str-input form-control" [(ngModel)]="updateName" name="text"
+        [ngModelOptions]="{standalone:true}">
+
+</div>
+<h3 style="text-align:center">{{updateName}}</h3>
+
+<hr>

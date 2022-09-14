@@ -1,0 +1,17 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-ts": "tsc",
+    "start": "ts-node ./dist",
+    "node": "tsc && node ./dist"
+  },
+  "author": "Kamalesh",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.3"
+  }
+}

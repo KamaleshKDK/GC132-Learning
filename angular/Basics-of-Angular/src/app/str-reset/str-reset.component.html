@@ -1,0 +1,12 @@
+<br>
+<div class="str-reset-input">
+    <input type="text" class=" form-control" name="text" [(ngModel)]="updateName"
+    [ngModelOptions]="{standalone:true}">
+</div>
+<br>
+<div class="str-reset-cntl">
+    <button class="str-reset btn btn-primary" (click)="update()" [disabled]="updateName === '' ">Reset</button>
+</div>
+
+<h3 style="text-align:center">{{updateName}}</h3>
+<hr>

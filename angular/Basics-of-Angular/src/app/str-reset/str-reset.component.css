@@ -1,0 +1,16 @@
+.str-reset-cntl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.str-reset {
+    width: 10%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.str-reset-input {
+    width: 250px;
+    margin: 0 auto;
+}

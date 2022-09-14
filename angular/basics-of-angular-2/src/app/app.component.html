@@ -1,0 +1,55 @@
+<!-- ngIf - directives -->
+
+
+<h1>List of Animes</h1>
+<!-- <div *ngIf="listOfAnimes.length > 0 ; then animes else noAnimes "></div>
+  <ng-template #animes>
+    <ul>
+      <li>Naruto</li>
+      <li>AOT</li>
+      <li>Demon Slayer</li>
+    </ul>
+  </ng-template>
+  <ng-template #noAnimes>No Animes are there !</ng-template> -->
+
+<!-- <hr> -->
+
+<!-- <div [hidden]="listOfAnimes.length == 0">
+  <ul>
+    <li>Naruto</li>
+    <li>AOT</li>
+    <li>Demon Slayer</li>
+  </ul>
+</div>
+<div [hidden]="listOfAnimes.length > 0">
+  No Animes are there
+</div> -->
+
+
+
+<!-- ngFor - directives -->
+
+<button (click)="loadCourse()">LoadCourse</button>
+
+<ul>
+  <li *ngFor="let course of listOfCourses; trackBy : trackCourse">{{course.name}}
+    <button (click)="removeCourse(course)">Remove</button>
+  </li>
+</ul>
+
+<!-- <button (click)="addCourse()">Add Course</button> -->
+
+
+ <!-- Custom Directives  -->
+
+ <h1 appCustomDirective>Custom Directives</h1>
+
+ <input type="text" [appCustomDirective]="'uppercase'" >
+
+ <hr>
+
+ <!-- Assignment -->
+ 
+ <zippy title="Shipping Details">
+  Shipping Details Content
+ </zippy>
